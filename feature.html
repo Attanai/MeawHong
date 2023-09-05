@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeawHong</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <style>
+        header {
+          background-image: none;
+        }
+      </style>
+      <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" /></a>
+            </div>
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#navbar-collapse"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- navbar-brand -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="feature.html" class="active">อุปการะ</a></li>
+                <li><a href="#">สมทบทุน</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+                <li><a href="#" class="menu-mob">ค้นหา</a></li>
+                <li><a href="#" class="menu-mob">โปรไฟล์</a></li>
+                <li>
+                  <a href="#" class="menu-off"
+                    ><i data-feather="shopping-cart" width="20" height="20"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-off"
+                    ><i data-feather="user" width="20" height="20"></i
+                  ></a>
+                </li>
+
+                <script>
+                  feather.replace();
+                </script>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="bg-feature">
+          <img src="images/bg2.png" />
+        </div>
+      </header>
+
+      <div class="feature">
+        <h1>ขั้นตอนการรับอุปการะ</h1>
+      </div>
+      <div class="box-feature">
+        <div class="step1">
+          <div class="step-head">
+            <h2>ประเภทสัตว์</h2>
+          </div>
+          <div class="step1-left">
+            <p>หมา</p>
+          </div>
+          <div class="step1-right">
+            <p>แมว</p>
+          </div>
+        </div>
+        <div class="step2">
+          <div class="step-head">
+            <h2>สายพันธ์ุ</h2>
+          </div>
+          <form>
+            <input list="species" name="specie" id="specie" />
+            <datalist id="species">
+              <option value="พันธุ์ไทยหลังอาน"></option>
+              <option value="พันธุ์บางแก้ว"></option>
+              <option value="โกลเด้น รีทรีฟเวอร์"></option>
+              <option value="ลาบาร์ดอร์ รีทรีฟเวอร์"></option>
+              <option value="อื่นๆ"></option>
+            </datalist>
+          </form>
+        </div>
+        <div class="step3">
+          <div class="step-head">
+            <h2>เพศ</h2>
+          </div>
+          <div class="step1-left">
+            <p>ผู้</p>
+          </div>
+          <div class="step1-right">
+            <p>เมีย</p>
+          </div>
+        </div>
+        <div class="step4">
+          <div class="step-head">
+            <h2>ช่วงอายุ</h2>
+          </div>
+          <form>
+            <input type="number" id="age" name="age" value="" />
+          </form>
+        </div>
+        <div class="step5">
+          <div class="step-head">
+            <h2>ทำหมัน</h2>
+          </div>
+          <div class="step1-left">
+            <p>ทำแล้ว</p>
+          </div>
+          <div class="step1-right">
+            <p>ยังไม่ได้ทำ</p>
+          </div>
+        </div>
+
+        <div class="step6">
+          <p>เงื่อนไขการรับเลี้ยง</p>
+          <div class="step6-search">
+            <h1>ค้นหา</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-output">
+        <h3>หมา</h3>
+        <div class="card">
+          <img src="images/card_dog1.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>ฟองดู</b></h4>
+            <p>เพศเมีย 3 ปี และ 1 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/card_dog2.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>ริชชี่</b></h4>
+            <p>เพศเมีย 10 ปี และ 2 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="del">
+          <img src="images/card_dog5.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>มูมู่</b></h4>
+            <p>เพศเมีย 8 ปี และ 4 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/card_dog3.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>ปีโป้</b></h4>
+            <p>เพศเมีย 6 ปี และ 3 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/card_dog4.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>เฉาก๊วย</b></h4>
+            <p>เพศเมีย 7 ปี และ 2 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="del">
+          <img src="images/card_dog6.jpg" style="width: 100%" />
+          <div class="detial">
+            <h4><b>หมูปิ้ง</b></h4>
+            <p>เพศเมีย 5 ปี และ 6 เดือน</p>
+            <div class="adopt">
+              <p>โปรดรับอุปการะหนู</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+        <p>
+          เรามุ่งมั่นในการหาบ้านที่แสนอบอุ่นให้แก่เหล่าหมาแมวจรจัดที่ต้องการบ้านถาวร!
+        </p>
+        <ul class="social">
+          <li class="icon-style">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="icon-style">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="icon-style">
+            <a href="#"><i class="fab fa-line"></i></a>
+          </li>
+          <li class="icon-style">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+
+        <hr />
+        <p class="text-footer">
+          Copyright © 2022 Meaw Hong. All Rights Reserved.
+        </p>
+
+        <button
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+          class="fas fa-arrow-up"
+        ></button>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
